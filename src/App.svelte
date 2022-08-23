@@ -135,11 +135,11 @@
 
 <div class="container">
     <script>
-    (function (){
-      if (window.location.href.includes("datavizu.app")) {
-        document.domain = "datavizu.app";
-      }
-    })();
+      (function (){
+        if (window.location.href.includes("datavizu.app")) {
+          document.domain = "datavizu.app";
+        }
+      })();
     </script>
     <div class="head">
         <h1>Chroma.js Color Palette Helper</h1>
