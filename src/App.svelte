@@ -133,14 +133,14 @@
 
 <svelte:window on:hashchange={hashChange} />
 
-<script>
-(function (){
-  if (window.location.href.includes("datavizu.app")) {
-    document.domain = "datavizu.app";
-  }
-})();
-</script>
 <div class="container">
+    <script>
+    (function (){
+      if (window.location.href.includes("datavizu.app")) {
+        document.domain = "datavizu.app";
+      }
+    })();
+    </script>
     <div class="head">
         <h1>Chroma.js Color Palette Helper</h1>
         <p>This <a href="https://github.com/gka/chroma.js" target="_blank">chroma.js</a>-powered tool is here to help us  <a target="_blank" href="http://vis4.net/blog/posts/mastering-multi-hued-color-scales/">mastering multi-hued, multi-stops color scales</a>.</p>
