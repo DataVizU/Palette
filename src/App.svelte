@@ -1,4 +1,10 @@
 <script>
+    (function (){
+        if (window.location.href.includes("datavizu.app")) {
+          document.domain = "datavizu.app";
+        }
+    })();
+
     import chroma from 'chroma-js';
     import { beforeUpdate, onMount } from 'svelte';
     import Checkbox from './Checkbox.svelte';
